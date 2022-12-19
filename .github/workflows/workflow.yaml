@@ -1,0 +1,14 @@
+name: myfirst-github-workflow
+
+run-name: ${{ github.actor }} is learning GitHub Actions
+
+on: [push]
+
+jobs: 
+  my-custom-jobs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo message
+        run: echo "Hello World"
+      - name: display hostname
+        run: hostname
