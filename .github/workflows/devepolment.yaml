@@ -28,7 +28,7 @@ jobs:
          AWS_DEFAULT_REGION: us-east-2
     steps:
       - uses: actions/ubuntu-latest
-      - uses: hashicorp/setup-terraform@v1
+     
         with:
           terraform_wrapper: false
       - name: Terraform Init
